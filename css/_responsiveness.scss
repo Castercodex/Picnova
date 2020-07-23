@@ -1,0 +1,149 @@
+@media screen and (max-width: 800px) {
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img {
+      flex: 3;
+    }
+    nav {
+      .burger {
+        display: flex;
+        cursor: pointer;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+
+      .nav-links {
+        width: 100%;
+        display: none;
+        background: rgba(255, 255, 255, 0.822);
+        padding: 0;
+
+        li {
+          display: block;
+
+          font-weight: bold;
+          margin-bottom: 5%;
+          font-size: 10px;
+        }
+      }
+      .active {
+        text-align: left;
+        display: block;
+        position: absolute;
+        top: 3rem;
+        padding-left: 1rem;
+        padding-right: 5rem;
+        padding-top: 3rem;
+        z-index: 0;
+        height: 100vh;
+        width: 100%;
+      }
+    }
+  }
+
+  #introduction {
+    font-size: 10px;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    #btn {
+      button {
+        height: 1rem;
+        width: 5rem;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 10px;
+      }
+    }
+  }
+
+  #about {
+    h1 {
+      font-size: 30px;
+    }
+    #img {
+      display: none;
+    }
+    #img-text {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.726)),
+        url(../assets/img/gallery/1.png);
+      background-size: cover;
+
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      text-align: center;
+      grid-gap: 50px;
+      width: 100%;
+
+      h2 {
+        font-size: 10px;
+      }
+    }
+  }
+
+  #other {
+    #box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+      h3 {
+        font-size: 15px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .lightbox_gallery {
+    h1 {
+      font-size: 30px;
+    }
+    #box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .book {
+    #box {
+      #text {
+        h1 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .testimonials {
+
+    #box {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  footer {
+      font-size: 10px;
+
+      .icons {
+            #icon {
+                
+            }
+      }
+  }
+}
